@@ -55,7 +55,7 @@ A Guide for Developers
 <!--
 _class:
  - invert
-backgroundImage: "url('https://placehold.co/1280x720/005a9c/ffffff?text=API+Endpoints')"
+backgroundImage: "url('api-background.jpg')"
 backgroundSize: cover
 -->
 
