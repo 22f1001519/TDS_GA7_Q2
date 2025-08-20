@@ -1,94 +1,79 @@
 ---
 marp: true
-theme: custom-theme
+title: Product Documentation
+author: Your Name
+theme: default
 paginate: true
-header: 'Product Documentation: API v2.0'
-footer: '© 2025 Software Corp.'
 ---
 
-<!--
-theme: custom-theme
-class:
- - lead
--->
-
+<!-- Custom Theme -->
 <style>
-  /* Define a custom theme for the presentation */
-  @theme custom-theme {
-    section {
-      background-color: #f0f4f8;
-      color: #333;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    h1, h2 {
-      color: #005a9c;
-      border-bottom: 2px solid #005a9c;
-    }
-    code {
-      background-color: #e0e8f0;
-      border-radius: 4px;
-      padding: 2px 6px;
-    }
-    a {
-      color: #0078d4;
-    }
-  }
+section {
+  background: #f4f4f4;
+  color: #333333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1, h2 {
+  color: #0055a5;
+}
+blockquote {
+  font-style: italic;
+  color: #555;
+}
+code {
+  background-color: #eaeaea;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
 </style>
 
-# **Product Documentation: API v2.0**
-A Guide for Developers
+# Welcome to Product Documentation
+
+Contact: 22f1001519@ds.study.iitm.ac.in
 
 ---
 
-## Agenda
+## Overview
 
-1.  Introduction to API v2.0
-2.  Key Features & Endpoints
-3.  Authentication
-4.  Algorithmic Complexity
-5.  Q&A
-
-*Contact for support: <a href="mailto:22f1001519@ds.study.iitm.ac.in">22f1001519@ds.study.iitm.ac.in</a>*
+- Purpose of the product
+- Core features
+- Target audience
 
 ---
 
-<!--
-_class:
- - invert
-backgroundImage: "url('api-background.jpg')"
-backgroundSize: cover
--->
+## Architecture Diagram
 
-## Key Features
-
-- **RESTful Architecture**: Predictable, resource-oriented URLs.
-- **JSON-based**: Standard JSON for requests and responses.
-- **OAuth 2.0**: Secure and standardized authentication.
-- **Scalable Infrastructure**: Built for high-throughput.
+![bg fit](https://blog.zegocloud.com/wp-content/uploads/2024/02/programming-meme-2.jpg)
 
 ---
 
-<!--
-_header: ''
-_footer: ''
--->
+## Algorithm Complexity
 
-## Algorithmic Complexity
+Inline example: $O(n \log n)$
 
-Understanding the performance of our core algorithms is crucial. The primary search endpoint has the following complexity:
+Block math example:
 
 $$
-O(n \log n)
+T(n) = T\left(\frac{n}{2}\right) + O(n) \implies O(n \log n)
 $$
-
-Where $n$ is the number of records in the dataset. This ensures efficient performance even as data scales.
 
 ---
 
-## Authentication Flow
+## Features
 
-Our API uses the OAuth 2.0 Client Credentials flow.
+- Feature 1
+- Feature 2
+- Feature 3
 
-1.  **Request Token**: Your application sends its `client_id` and `client_secret` to the `/oauth/token` endpoint.
-2.  **Receive Token**: The server validates credentials and returns a temporary `access_token`.
-3.  **Access API**: Include the `access_token` in the `Authorization` header for all subsequent API calls.
+<!-- _color: #0055a5 -->
+<!-- _footer: Page footer: Product Documentation -->
+<!-- _header: **Documentation Slides** -->
+
+---
+
+## Code Example
+
+```python
+def calculate_sum(arr):
+    return sum(arr)
+```
